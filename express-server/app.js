@@ -16,13 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors({
-  origin: true, // Replace with your React app's URL
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // If your app uses credentials such as cookies, set this to true
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
-}))
+app.use(cors())
 
 // estblishing connection to MongoDB
 require('./setupMongo.js')();
