@@ -6,7 +6,8 @@ import axios from 'axios';
 
 // creating base URL using axios
 const axiosinstance = axios.create({
-  baseURL: 'http://localhost:3000/api'
+  baseURL: 'http://localhost:3000/api',
+  credentials: 'include'
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
