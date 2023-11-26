@@ -13,6 +13,7 @@ build/
 
 # misc
 .DS_Store
+client/.env
 express-server/.env
 .env.local
 .env.development.local
