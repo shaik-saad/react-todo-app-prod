@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // creating base URL using axios
 const axiosinstance = axios.create({
-  baseURL: process.env.CLIENT_URL || 'http://localhost:3000/api',
+  baseURL: process.env.REACT_APP_CLIENT_URL || 'http://localhost:3000/api',
   credentials: 'include'
 })
 
