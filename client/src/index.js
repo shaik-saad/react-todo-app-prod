@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // creating base URL using axios
 const axiosinstance = axios.create({
-  baseURL: process.env.BACKEND_API || 'http://localhost:3000/api',
+  baseURL: process.env.BACKEND_API,
   credentials: 'include'
 })
 
