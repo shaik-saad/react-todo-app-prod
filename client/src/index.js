@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { RequestProvider } from 'react-request-hook'
 import axios from 'axios';
+import {config} from 'dotenv'
+config()
 
 // creating base URL using axios
 const axiosinstance = axios.create({
