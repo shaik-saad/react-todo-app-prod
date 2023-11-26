@@ -17,11 +17,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({
-    origin: 'https://react-todo-app-dbq3.onrender.com', // Replace with your React app's URL
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // If your app uses credentials such as cookies, set this to true
-    preflightContinue: false,
-    optionsSuccessStatus: 204,
+  origin: true, // Replace with your React app's URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // If your app uses credentials such as cookies, set this to true
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
 }))
 
 // estblishing connection to MongoDB
